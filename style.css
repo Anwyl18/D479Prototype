@@ -58,9 +58,354 @@ li {
     background-color:#6699CC;
     color:white;
 }
+.button_hover {
+    border-radius: 0px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    border: 0px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .button_hover:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+    background: #f8b100;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+  
+  .button_hover:hover {
+    color: #fff;
+  }
+  
+  .button_hover:hover:before {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+.book_now_btn {
+    width: 100%;
+    display: block;
+    background-color: #003B6D;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 5px 20px;
+  }
+  
+  .hotel_booking_table {
+    background: #04091e;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 50px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .hotel_booking_table h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .boking_table {
+    margin-left: -50px;
+  }
+  
+  .book_tabel_item .form-group {
+    margin-bottom: 0px;
+  }
+  
+  .book_tabel_item .form-group .input-group {
+    position: relative;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control {
+    border: 1px solid #2b3146;
+    background: transparent;
+    border-radius: 0px;
+    font-size: 13px;
+    line-height: 38px;
+    padding: 0px 20px;
+    color: #777777;
+    z-index: 0;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control.placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control:-moz-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control::-moz-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control::-webkit-input-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .book_tabel_item .form-group .input-group .input-group-addon {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #777777;
+    z-index: 2;
+  }
+  
+  .book_tabel_item .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .book_tabel_item .nice-select {
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid #2b3146;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #777;
+  }
+  
+  .book_tabel_item .nice-select:after {
+    content: "\e874";
+    font-family: 'Linearicons-Free';
+    font-size: 13px;
+    color: #777777;
+    border: 0px;
+    top: 0;
+    margin-top: 0px;
+    right: 20px;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  
+  blog_right_sidebar .search_widget .input-group .form-control {
+    font-size: 14px;
+    line-height: 29px;
+    border: 0px;
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 20px;
+    border-radius: 45px;
+    z-index: 0;
+    background: #f3c300;
+  }
+  
+  .blog_right_sidebar .search_widget .input-group .form-control.placeholder {
+    color: #fff;
+  }
+  
+  .blog_right_sidebar .search_widget .input-group .form-control:-moz-placeholder {
+    color: #fff;
+  }
+  
+  .blog_right_sidebar .search_widget .input-group .form-control::-moz-placeholder {
+    color: #fff;
+  }
+  
+  .blog_right_sidebar .search_widget .input-group .form-control::-webkit-input-placeholder {
+    color: #fff;
+  }
+  
+  .blog_right_sidebar .search_widget .input-group .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .blog_right_sidebar .search_widget .input-group .btn-default {
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .input-group-icon {
+    position: relative;
+  }
+  
+  .input-group-icon .icon {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    line-height: 40px;
+    z-index: 3;
+  }
+  
+  .input-group-icon .icon i {
+    color: #797979;
+  }
+  
+  .input-group-icon .single-input {
+    padding-left: 45px;
+  }
 .image-main{
     padding-left: 100px;
 }
+.default-select .nice-select {
+    border: none;
+    border-radius: 0px;
+    height: 40px;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  
+  .default-select .nice-select .list {
+    margin-top: 0;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 10px 0 10px 0px;
+  }
+  
+  .default-select .nice-select .list .option {
+    font-weight: 300;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 28px;
+    min-height: 28px;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  
+  .default-select .nice-select .list .option.selected {
+    color: #f8b600;
+    background: transparent;
+  }
+  
+  .default-select .nice-select .list .option:hover {
+    color: #f8b600;
+    background: transparent;
+  }
+  
+  .default-select .current {
+    margin-right: 50px;
+    font-weight: 300;
+  }
+  
+  .default-select .nice-select::after {
+    right: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .left-align-p p {
+      margin-top: 20px;
+    }
+  }
+  
+  .form-select {
+    height: 40px;
+    width: 100%;
+  }
+  
+  .form-select .nice-select {
+    border: none;
+    border-radius: 0px;
+    height: 40px;
+    background: #fff !important;
+    padding-left: 45px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  
+  .form-select .nice-select .list {
+    margin-top: 0;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 10px 0 10px 0px;
+  }
+  
+  .mt-10 {
+    margin-top: 10px;
+  }
+  
+  .form-select .nice-select .list .option {
+    font-weight: 300;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 28px;
+    min-height: 28px;
+    font-size: 12px;
+    padding-left: 45px;
+  }
+  
+  .form-select .nice-select .list .option.selected {
+    color: #f8b600;
+    background: transparent;
+  }
+  
+  .form-select .nice-select .list .option:hover {
+    color: #f8b600;
+    background: transparent;
+  }
+  
+  .form-select .current {
+    margin-right: 50px;
+    font-weight: 300;
+  }
+  
+  .form-select .nice-select::after {
+    right: 20px;
+  }
 .p-3{
     background-color: #6699CC;
     color: white;
@@ -80,6 +425,13 @@ li {
     background-color: #BDBDBD;
 }
 
+.booking{
+    margin-left: 200px;
+    margin-top: 20px;
+    padding: 30px 10px 30px 10px;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
  
 body
@@ -92,7 +444,7 @@ background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Fire
   
 }
  
-h2
+h2, h3
 {
   font-family: 'Molle', cursive;
   color:CornflowerBlue;
@@ -112,9 +464,7 @@ p{
  
 @media (min-width:992px)
 {
-    .about_section .about_img img
-    {
-	}
+    
  
     .about_section .about_img_2
     {
